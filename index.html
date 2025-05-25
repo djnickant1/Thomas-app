@@ -155,53 +155,51 @@
 
     <script>
         // Array of character data. Each object contains a name and an image URL.
-        // IMPORTANT: Replace these placeholder URLs with actual direct image URLs
-        // from where you host your character images online (e.g., Imgur, your own server).
+        // Images are now assumed to be located in an 'images' folder within your repository.
         const characters = [
-    { name: "Thomas", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Thomas_the_Tank_Engine.svg" },
-    { name: "Edward", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Edward_the_Blue_Engine.svg" },
-    { name: "Henry", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Henry_the_Green_Engine.svg" },
-    { name: "Gordon", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Gordon_the_Big_Engine.svg" },
-    { name: "James", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/ea/James_the_Red_Engine.svg" },
-    { name: "Percy", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Percy_the_Small_Green_Engine.svg" },
-    { name: "Toby", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/71/Toby_the_Trolley_Engine.svg" },
-    { name: "Duck", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/69/Duck_the_Yellow_Engine.svg" },
-    { name: "Donald", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/3/35/Donald_the_Blue_Engine.svg" },
-    { name: "Douglas", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/12/Douglas_the_Blue_Engine.svg" },
-    { name: "Oliver", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/f6/Oliver_the_Green_Engine.svg" },
-    { name: "Emily", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/71/Emily_the_Engine.svg" },
-    { name: "Nia", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/68/Nia_the_Engine.svg" },
-    { name: "Rebecca", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Rebecca_the_Yellow_Engine.svg" },
-    { name: "Rosie", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Rosie_the_Red_Engine.svg" },
-    { name: "Diesel", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/47/Diesel_the_Engine.svg" },
-    { name: "Mavis", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Mavis_the_Engine.svg" },
-    { name: "Harold", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/9b/Harold_the_Helicopter.svg" },
-    { name: "Bertie", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/06/Bertie_the_Bus.svg" },
-    { name: "Annie", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Annie_and_Clarabel.svg" },
-    { name: "Clarabel", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Annie_and_Clarabel.svg" },
-    { name: "Sir Topham Hatt", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Sir_Topham_Hatt.svg" },
-    { name: "Spencer", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Spencer_the_Engine.svg" },
-    { name: "Hiro", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/42/Hiro_the_Engine.svg" },
-    { name: "Cranky", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/9b/Cranky_the_Crane.svg" },
-    { name: "Salty", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e5/Salty_the_Engine.svg" },
-    { name: "Bill", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/72/Bill_and_Ben.svg" },
-    { name: "Ben", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/72/Bill_and_Ben.svg" },
-    { name: "Diesel 10", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Diesel_10.svg" },
-    { name: "Arry", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d8/Arry_and_Bert.svg" },
-    { name: "Bert", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d8/Arry_and_Bert.svg" },
-    { name: "Flynn", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/09/Flynn_the_Fire_Engine.svg" },
-    { name: "Harvey", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a1/Harvey_the_Engine.svg" },
-    { name: "Molly", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Molly_the_Engine.svg" },
-    { name: "Arthur", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Arthur_the_Engine.svg" },
-    { name: "Murdoch", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Murdoch_the_Engine.svg" },
-    { name: "Skarloey", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/64/Skarloey_the_Engine.svg" },
-    { name: "Rheneas", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Rheneas_the_Engine.svg" },
-    { name: "Duncan", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/3/38/Duncan_the_Engine.svg" },
-    { name: "Rusty", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/cd/Rusty_the_Engine.svg" },
-    { name: "Peter Sam", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/72/Peter_Sam_the_Engine.svg" },
-    { name: "Sir Handel", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Sir_Handel_the_Engine.svg" }
-];
-
+            { name: "Thomas", imageUrl: "./images/thomas.jpg" },
+            { name: "Edward", imageUrl: "./images/edward.jpg" },
+            { name: "Henry", imageUrl: "./images/henry.jpg" },
+            { name: "Gordon", imageUrl: "./images/gordon.jpg" },
+            { name: "James", imageUrl: "./images/james.jpg" },
+            { name: "Percy", imageUrl: "./images/percy.jpg" },
+            { name: "Toby", imageUrl: "./images/toby.jpg" },
+            { name: "Duck", imageUrl: "./images/duck.jpg" },
+            { name: "Donald", imageUrl: "./images/donald.jpg" },
+            { name: "Douglas", imageUrl: "./images/douglas.jpg" },
+            { name: "Oliver", imageUrl: "./images/oliver.jpg" },
+            { name: "Emily", imageUrl: "./images/emily.jpg" },
+            { name: "Nia", imageUrl: "./images/nia.jpg" },
+            { name: "Rebecca", imageUrl: "./images/rebecca.jpg" },
+            { name: "Rosie", imageUrl: "./images/rosie.jpg" },
+            { name: "Diesel", imageUrl: "./images/diesel.jpg" },
+            { name: "Mavis", imageUrl: "./images/mavis.jpg" },
+            { name: "Harold", imageUrl: "./images/harold.jpg" },
+            { name: "Bertie", imageUrl: "./images/bertie.jpg" },
+            { name: "Annie", imageUrl: "./images/annie-clarabel.jpg" }, // Shared image with Clarabel
+            { name: "Clarabel", imageUrl: "./images/annie-clarabel.jpg" }, // Shared image with Annie
+            { name: "Sir Topham Hatt", imageUrl: "./images/sir-topham-hatt.jpg" },
+            { name: "Spencer", imageUrl: "./images/spencer.jpg" },
+            { name: "Hiro", imageUrl: "./images/hiro.jpg" },
+            { name: "Cranky", imageUrl: "./images/cranky.jpg" },
+            { name: "Salty", imageUrl: "./images/salty.jpg" },
+            { name: "Bill", imageUrl: "./images/bill-ben.jpg" }, // Shared image with Ben
+            { name: "Ben", imageUrl: "./images/bill-ben.jpg" }, // Shared image with Bill
+            { name: "Diesel 10", imageUrl: "./images/diesel10.jpg" },
+            { name: "Arry", imageUrl: "./images/arry-bert.jpg" }, // Shared image with Bert
+            { name: "Bert", imageUrl: "./images/arry-bert.jpg" }, // Shared image with Arry
+            { name: "Flynn", imageUrl: "./images/flynn.jpg" },
+            { name: "Harvey", imageUrl: "./images/harvey.jpg" },
+            { name: "Molly", imageUrl: "./images/molly.jpg" },
+            { name: "Arthur", imageUrl: "./images/arthur.jpg" },
+            { name: "Murdoch", imageUrl: "./images/murdoch.jpg" },
+            { name: "Skarloey", imageUrl: "./images/skarloey.jpg" },
+            { name: "Rheneas", imageUrl: "./images/rheneas.jpg" },
+            { name: "Duncan", imageUrl: "./images/duncan.jpg" },
+            { name: "Rusty", imageUrl: "./images/rusty.jpg" },
+            { name: "Peter Sam", imageUrl: "./images/peter-sam.jpg" },
+            { name: "Sir Handel", imageUrl: "./images/sir-handel.jpg" }
+        ];
 
         const characterGrid = document.getElementById('characterGrid');
         const messageBox = document.getElementById('messageBox');
@@ -403,3 +401,4 @@
     </script>
 </body>
 </html>
+
