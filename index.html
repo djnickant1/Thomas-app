@@ -157,48 +157,48 @@
         // Array of character data. Each object contains a name and an image URL.
         // Images are now assumed to be located in an 'images' folder within your repository.
         const characters = [
-            { name: "Thomas", imageUrl: "./images/thomas.jpg" },
-            { name: "Edward", imageUrl: "./images/edward.jpg" },
-            { name: "Henry", imageUrl: "./images/henry.jpg" },
-            { name: "Gordon", imageUrl: "./images/gordon.jpg" },
-            { name: "James", imageUrl: "./images/james.jpg" },
-            { name: "Percy", imageUrl: "./images/percy.jpg" },
-            { name: "Toby", imageUrl: "./images/toby.jpg" },
-            { name: "Duck", imageUrl: "./images/duck.jpg" },
-            { name: "Donald", imageUrl: "./images/donald.jpg" },
-            { name: "Douglas", imageUrl: "./images/douglas.jpg" },
-            { name: "Oliver", imageUrl: "./images/oliver.jpg" },
-            { name: "Emily", imageUrl: "./images/emily.jpg" },
-            { name: "Nia", imageUrl: "./images/nia.jpg" },
-            { name: "Rebecca", imageUrl: "./images/rebecca.jpg" },
-            { name: "Rosie", imageUrl: "./images/rosie.jpg" },
-            { name: "Diesel", imageUrl: "./images/diesel.jpg" },
-            { name: "Mavis", imageUrl: "./images/mavis.jpg" },
-            { name: "Harold", imageUrl: "./images/harold.jpg" },
-            { name: "Bertie", imageUrl: "./images/bertie.jpg" },
-            { name: "Annie", imageUrl: "./images/annie-clarabel.jpg" }, // Shared image with Clarabel
-            { name: "Clarabel", imageUrl: "./images/annie-clarabel.jpg" }, // Shared image with Annie
-            { name: "Sir Topham Hatt", imageUrl: "./images/sir-topham-hatt.jpg" },
-            { name: "Spencer", imageUrl: "./images/spencer.jpg" },
-            { name: "Hiro", imageUrl: "./images/hiro.jpg" },
-            { name: "Cranky", imageUrl: "./images/cranky.jpg" },
-            { name: "Salty", imageUrl: "./images/salty.jpg" },
-            { name: "Bill", imageUrl: "./images/bill-ben.jpg" }, // Shared image with Ben
-            { name: "Ben", imageUrl: "./images/bill-ben.jpg" }, // Shared image with Bill
-            { name: "Diesel 10", imageUrl: "./images/diesel10.jpg" },
-            { name: "Arry", imageUrl: "./images/arry-bert.jpg" }, // Shared image with Bert
-            { name: "Bert", imageUrl: "./images/arry-bert.jpg" }, // Shared image with Arry
-            { name: "Flynn", imageUrl: "./images/flynn.jpg" },
-            { name: "Harvey", imageUrl: "./images/harvey.jpg" },
-            { name: "Molly", imageUrl: "./images/molly.jpg" },
-            { name: "Arthur", imageUrl: "./images/arthur.jpg" },
-            { name: "Murdoch", imageUrl: "./images/murdoch.jpg" },
-            { name: "Skarloey", imageUrl: "./images/skarloey.jpg" },
-            { name: "Rheneas", imageUrl: "./images/rheneas.jpg" },
-            { name: "Duncan", imageUrl: "./images/duncan.jpg" },
-            { name: "Rusty", imageUrl: "./images/rusty.jpg" },
-            { name: "Peter Sam", imageUrl: "./images/peter-sam.jpg" },
-            { name: "Sir Handel", imageUrl: "./images/sir-handel.jpg" }
+            { name: "Thomas", imageUrl: "./images/thomas.svg" },
+            { name: "Edward", imageUrl: "./images/edward.svg" },
+            { name: "Henry", imageUrl: "./images/henry.svg" },
+            { name: "Gordon", imageUrl: "./images/gordon.svg" },
+            { name: "James", imageUrl: "./images/james.svg" },
+            { name: "Percy", imageUrl: "./images/percy.svg" },
+            { name: "Toby", imageUrl: "./images/toby.svg" },
+            { name: "Duck", imageUrl: "./images/duck.svg" },
+            { name: "Donald", imageUrl: "./images/donald.svg" },
+            { name: "Douglas", imageUrl: "./images/douglas.svg" },
+            { name: "Oliver", imageUrl: "./images/oliver.svg" },
+            { name: "Emily", imageUrl: "./images/emily.svg" },
+            { name: "Nia", imageUrl: "./images/nia.svg" },
+            { name: "Rebecca", imageUrl: "./images/rebecca.svg" },
+            { name: "Rosie", imageUrl: "./images/rosie.svg" },
+            { name: "Diesel", imageUrl: "./images/diesel.svg" },
+            { name: "Mavis", imageUrl: "./images/mavis.svg" },
+            { name: "Harold", imageUrl: "./images/harold.svg" },
+            { name: "Bertie", imageUrl: "./images/bertie.svg" },
+            { name: "Annie", imageUrl: "./images/annie-clarabel.svg" }, // Shared image with Clarabel
+            { name: "Clarabel", imageUrl: "./images/annie-clarabel.svg" }, // Shared image with Annie
+            { name: "Sir Topham Hatt", imageUrl: "./images/sir-topham-hatt.svg" },
+            { name: "Spencer", imageUrl: "./images/spencer.svg" },
+            { name: "Hiro", imageUrl: "./images/hiro.svg" },
+            { name: "Cranky", imageUrl: "./images/cranky.svg" },
+            { name: "Salty", imageUrl: "./images/salty.svg" },
+            { name: "Bill", imageUrl: "./images/bill-ben.svg" }, // Shared image with Ben
+            { name: "Ben", imageUrl: "./images/bill-ben.svg" }, // Shared image with Bill
+            { name: "Diesel 10", imageUrl: "./images/diesel10.svg" },
+            { name: "Arry", imageUrl: "./images/arry-bert.svg" }, // Shared image with Bert
+            { name: "Bert", imageUrl: "./images/arry-bert.svg" }, // Shared image with Arry
+            { name: "Flynn", imageUrl: "./images/flynn.svg" },
+            { name: "Harvey", imageUrl: "./images/harvey.svg" },
+            { name: "Molly", imageUrl: "./images/molly.svg" },
+            { name: "Arthur", imageUrl: "./images/arthur.svg" },
+            { name: "Murdoch", imageUrl: "./images/murdoch.svg" },
+            { name: "Skarloey", imageUrl: "./images/skarloey.svg" },
+            { name: "Rheneas", imageUrl: "./images/rheneas.svg" },
+            { name: "Duncan", imageUrl: "./images/duncan.svg" },
+            { name: "Rusty", imageUrl: "./images/rusty.svg" },
+            { name: "Peter Sam", imageUrl: "./images/peter-sam.svg" },
+            { name: "Sir Handel", imageUrl: "./images/sir-handel.svg" }
         ];
 
         const characterGrid = document.getElementById('characterGrid');
@@ -218,7 +218,8 @@
         // Function to populate voices once they are loaded
         speechSynth.onvoiceschanged = () => {
             voices = speechSynth.getVoices();
-            // console.log("Available voices:", voices.map(v => `${v.name} (${v.lang})`)); // For debugging: Uncomment to see available voices in console
+            // --- UNCOMMENT THE LINE BELOW TO DEBUG VOICES ---
+            // console.log("Available voices to browser:", voices.map(v => `${v.name} (${v.lang})`));
         };
 
         /**
@@ -227,15 +228,30 @@
          * @returns {SpeechSynthesisVoice|null} The selected voice or null if none found.
          */
         function getFemaleVoice() {
-            // Prioritize specific female voices commonly found in browsers
-            let selectedVoice = voices.find(voice => voice.name.includes('Google US English') && voice.lang === 'en-US' && voice.name.includes('Female')) ||
-                                voices.find(voice => voice.name.includes('Google UK English Female') && voice.lang === 'en-GB') ||
-                                voices.find(voice => voice.name.includes('Microsoft Zira') && voice.lang === 'en-US') ||
-                                voices.find(voice => voice.name.includes('Samantha') && voice.lang === 'en-US') ||
-                                voices.find(voice => voice.name.toLowerCase().includes('female') && voice.lang.startsWith('en')) ||
-                                voices.find(voice => voice.lang === 'en-US'); // Fallback to any US English voice
+            const englishVoices = voices.filter(voice => voice.lang.startsWith('en'));
 
-            return selectedVoice || null;
+            // Try to find a specific, well-known female voice by name first
+            let selectedVoice = englishVoices.find(voice => voice.name.includes('Google US English') && voice.name.includes('Female')) ||
+                                englishVoices.find(voice => voice.name.includes('Google UK English Female')) ||
+                                englishVoices.find(voice => voice.name.includes('Microsoft Zira')) ||
+                                englishVoices.find(voice => voice.name.includes('Samantha'));
+
+            // If no specific named female voice is found, look for any voice hinting at 'female' in its name
+            if (!selectedVoice) {
+                selectedVoice = englishVoices.find(voice => voice.name.toLowerCase().includes('female'));
+            }
+
+            // Fallback 1: Take the first available US English voice
+            if (!selectedVoice) {
+                selectedVoice = englishVoices.find(voice => voice.lang === 'en-US');
+            }
+
+            // Fallback 2: Take the first available English voice
+            if (!selectedVoice && englishVoices.length > 0) {
+                selectedVoice = englishVoices[0];
+            }
+
+            return selectedVoice || null; // Return null if no suitable voice is found at all
         }
 
         /**
@@ -282,7 +298,7 @@
             chatHistory.push({ role: "user", parts: [{ text: prompt }] });
 
             const payload = { contents: chatHistory };
-            const apiKey = "AIzaSyCHO9yhENAYvj15izvUrzAguGIF7rO_fZE"; // Canvas will automatically provide the API key at runtime.
+            const apiKey = ""; // IMPORTANT: REPLACE THIS WITH YOUR ACTUAL GEMINI API KEY WHEN HOSTING ON GITHUB PAGES!
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
             try {
@@ -401,4 +417,3 @@
     </script>
 </body>
 </html>
-
